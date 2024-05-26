@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Rotating Meal Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weekly Rotating Meal Menu</h1>
+    </header>
+
+    <section id="subscription">
+        <h2>Subscribe to Our Meal Plan</h2>
+        <form id="subscription-form">
+            <label for="subscription-type">Choose your plan:</label>
+            <select id="subscription-type" name="subscription-type">
+                <option value="6">Box of 6 meals</option>
+                <option value="12">Box of 12 meals</option>
+            </select>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="menu">
+        <h2>This Week's Menu</h2>
+        <div class="meal-category">
+            <h3>Breakfast</h3>
+            <div class="dropdown">
+                <button class="dropbtn">Select Breakfast</button>
+                <div class="dropdown-content" id="breakfast-menu">
+                    <!-- Breakfast items will be added here -->
+                </div>
+            </div>
+        </div>
+        <div class="meal-category">
+            <h3>Lunch</h3>
+            <ul id="lunch-menu">
+                <!-- Lunch items will be added here -->
+            </ul>
+        </div>
+        <div class="meal-category">
+            <h3>Dinner</h3>
+            <ul id="dinner-menu">
+                <!-- Dinner items will be added here -->
+            </ul>
+        </div>
+        <div class="meal-category">
+            <h3>Desserts</h3>
+            <ul id="desserts-menu">
+                <!-- Desserts items will be added here -->
+            </ul>
+        </div>
+        <div class="meal-category">
+            <h3>Beverages</h3>
+            <ul id="beverages-menu">
+                <!-- Beverages items will be added here -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meal Subscription Service</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
